@@ -675,6 +675,69 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px
 
 
 
+.faq-section {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .faq-item {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    .faq-header {
+      background: #f9f9f9;
+      cursor: pointer;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .faq-header span {
+      color: #800000;
+    }
+
+    .faq-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 15px;
+      background: #fff;
+    }
+
+    .faq-body p {
+      padding: 12px 0;
+      margin: 0;
+      color: #444;
+    }
+
+    .faq-item.active .faq-body {
+      max-height: 200px; /* Adjust as needed */
+    }
+
+    .icon {
+      font-size: 20px;
+      transition: transform 0.3s;
+    }
+
+    .faq-item.active .icon {
+      transform: rotate(45deg);
+    }
+
+
+  
+
+
+
+
+
+
+
+
 
 
 
@@ -743,6 +806,8 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px
     margin: 12px auto 0;
   }
 }
+
+
 
 
 
