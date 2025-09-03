@@ -34,3 +34,14 @@ const numElements = document.querySelectorAll(".num");
 numElements.forEach(element => {
   observer.observe(element);
 });
+
+
+document.querySelectorAll(".faq-header").forEach(header => {
+      header.addEventListener("click", () => {
+        const item = header.parentElement;
+        item.classList.toggle("active");
+      });
+    });
+
+
+
